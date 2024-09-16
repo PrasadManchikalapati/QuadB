@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const connect = require('./connectdb')
+const connect = require('./models/connectdb')
 const Ticker=require('./models/schema')
 const axios = require('axios');
 const cors = require('cors'); 
