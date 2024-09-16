@@ -123,7 +123,7 @@ checkbox.addEventListener('change', function() {
 
 const fetchData = async () => {
     try {
-        const response = await fetch('http://localhost:3000/tickers');
+        const response = await fetch('https://quadb-6blq.onrender.com/Tickers');
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
