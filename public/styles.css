@@ -340,9 +340,11 @@ hr {
 
 .bottom-div{
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
     min-width: 100vw;
+    margin-bottom: 38px;
 }
 
 .bottom {
