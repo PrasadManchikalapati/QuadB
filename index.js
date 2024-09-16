@@ -5,7 +5,7 @@ const Ticker=require('./models/schema')
 const axios = require('axios');
 const cors = require('cors'); 
 const path = require('path');
-const port = 3000
+const port = process.env.PORT || 3000;
 app.use(cors());
 connect
 
@@ -57,6 +57,6 @@ app.get('/fetch-tickers', async (req, res) => {
 });
 
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-})
+app.listen(port, '0.0.0.0', () => {
+    console.log(`Server is running on port ${port}`);
+  });
