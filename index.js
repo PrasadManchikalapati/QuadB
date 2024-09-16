@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const connect = require('./connectdb')
-const Ticker=require('./schema')
+const Ticker=require('./models/schema')
 const axios = require('axios');
 const cors = require('cors'); 
 const port = 3000
