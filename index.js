@@ -9,6 +9,11 @@ app.use(cors());
 connect
 
 Ticker
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+app.use(express.static('public'));
+
 app.get('/fetch-tickers', async (req, res) => {
     try {
         // Fetch data from the API
