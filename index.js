@@ -4,6 +4,7 @@ const connect = require('./models/connectdb')
 const Ticker=require('./models/schema')
 const axios = require('axios');
 const cors = require('cors'); 
+const path = require('path');
 const port = 3000
 app.use(cors());
 connect
