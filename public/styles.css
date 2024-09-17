@@ -381,6 +381,13 @@ hr {
     background-color: cyan;
 }
 
+td{
+    text-align:center;
+}
+th{
+    text-align:center;
+}
+
 /* Media Queries */
 
 @media only screen and (max-width: 991px) {
@@ -447,10 +454,12 @@ hr {
     }
     th{
         font-size: 0.6em;
+        text-align:center;
     }
     td{
         font-size: 0.7em;
         padding: 5px;
+        text-align:center;
     }
     hr{
         min-width: 100vw;
